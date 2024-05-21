@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+:root
+{
+    --cor1: #FFF9F2;
+    --cor2: #72863d;
+}
+
 *
 {
     margin: 0px;
@@ -8,24 +14,141 @@
 
 body
 {
-    background-color: #FFF9F1;
+    background-color: var(--cor1);
 }
 
+/*  HEADER  */
 header
 {
     position: relative;
-    height: 200px;
+
+    display: flex;
+    justify-content: center;
 }
+
+/*  IMAGENS HEADER    */
+#container-header
+{
+    height: 160px;
+    width: 100vw;
+
+    display: flex;
+    justify-content: space-between;
+}
+#container-header > div
+{   min-width: 150px; }
+
 #folha2
 {
-    z-index: 1;
-    position: absolute;
-    left: 100px;
-    bottom: 95px;
+    position: relative;
+    bottom: 80px; 
 }
 #pincelada-header
 {
+    position: relative;
+    height: 300px;
+    right: 90px;
+    bottom: 60px;
+}
+
+/*  TEXTO HEADER  */
+header > p
+{
     position: absolute;
-    right: 100px;
-    bottom: 2px;
+    top: 120px;
+}
+
+/*  IMAGEM MAIN   */
+main img
+{
+    position: relative;
+    left: 4px;
+    width: 270px;
+    height: 210px;
+}
+#container-midia-main
+{
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*  NOME MAIN */
+#container-midia-main > p
+{
+    position: absolute;  
+}
+
+/*  INFORMACOES MAIN  */
+#container-informacoes
+{
+    text-align: center;
+    padding-block: 20px;
+}
+
+/*  BOTOES MAIN   */
+#container-botoes
+{
+    display: flex;
+    justify-content: space-evenly;
+
+    margin-top: 10px;
+}
+.botoes
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    width: 85px;
+    height: 35px;
+    background-color: var(--cor2);
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--cor1);
+}
+.botoes::before, .botoes::after
+{
+    content: "";
+    position: absolute;
+    border-radius: 8px;
+    width: calc(100% + 12px);
+    height: calc(100% + 12px);
+    background-color: green;
+    z-index: -1;
+}
+a
+{
+    text-decoration: none;
+    color: var(--cor1);
+}
+
+/*  FOOTER    */
+footer
+{
+    height: 200px;
+
+    display: flex;
+    justify-content: space-between;
+}
+footer > div
+{
+    min-width: 150px;
+}
+
+#folha1
+{
+    position: relative;
+    right: 90px;
+    top: 20px;
+}
+#pincelada-footer
+{
+    position: relative;
+    bottom: 100px;
+    right: 20px;
 }
