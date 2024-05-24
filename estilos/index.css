@@ -1,9 +1,26 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&display=swap');
+
+@keyframes bordaBotao
+{
+    from
+    {
+        background-position: 0%;
+    }
+    to
+    {
+        background-position: 300%;
+    }
+}
+
 :root
 {
     --cor1: #FFF9F2;
     --cor2: #72863d;
+
+    --font1: 'Dancing Script', 'serif';
+    --font2: 'pacifico', serif;
 }
 
 *
@@ -55,7 +72,9 @@ header
 header > p
 {
     position: absolute;
-    top: 120px;
+    top: 100px;
+    font-family: var(--font1);
+    font-size: 22px;
 }
 
 /*  IMAGEM MAIN   */
@@ -79,6 +98,8 @@ main img
 #container-midia-main > p
 {
     position: absolute;  
+    font-family: var(--font1);
+    font-size: 34px;
 }
 
 /*  INFORMACOES MAIN  */
@@ -86,6 +107,7 @@ main img
 {
     text-align: center;
     padding-block: 20px;
+    font-family: var(--font2);
 }
 
 /*  BOTOES MAIN   */
@@ -108,7 +130,7 @@ main img
     background-color: var(--cor2);
     border-radius: 8px;
     border-style: solid;
-    border-width: 3px;
+    border-width: 2px;
     border-color: var(--cor1);
 }
 .botoes::before, .botoes::after
@@ -116,15 +138,23 @@ main img
     content: "";
     position: absolute;
     border-radius: 8px;
-    width: calc(100% + 12px);
-    height: calc(100% + 12px);
-    background-color: green;
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    background: linear-gradient(45deg, var(--cor1), var(--cor2));
+    background-size: 300%;
     z-index: -1;
+
+    animation: bordaBotao 4s linear infinite;
+}
+.botoes::after
+{
+    filter: blur(5px);
 }
 a
 {
     text-decoration: none;
     color: var(--cor1);
+    font-family: var(--font2);
 }
 
 /*  FOOTER    */
@@ -144,11 +174,13 @@ footer > div
 {
     position: relative;
     right: 90px;
-    top: 20px;
+    bottom: 25px;
+    z-index: -2;
 }
 #pincelada-footer
 {
     position: relative;
-    bottom: 100px;
-    right: 20px;
+    bottom: 130px;
+    right: 25px;
+    z-index: -2;
 }
