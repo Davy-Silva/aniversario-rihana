@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media only screen and (max-width: 375px)
+@media only screen and (min-width: 375px)
 {
     header > p
     {
@@ -25,4 +25,66 @@
         height: 40px;
         font-size: 16px;
     }  
+}
+
+@media only screen and (min-width: 600px)
+{
+    #folha2
+    {
+        left: 50px;
+    }
+    header > p
+    {
+        font-size: 38px;
+    }
+    #container-midia-main > img
+    {
+        width: 400px;
+        height: 320px;
+    }
+    #container-midia-main p
+    {
+        font-size: 45px;
+    }
+    #container-informacoes
+    {
+        font-size: 20px;
+        padding-block: 0px;
+        padding-bottom: 20px;
+    }
+    .botoes
+    {
+        width: 150px;
+        height: 45px;
+        font-size: 20px;
+    }
+    #pincelada-footer
+    {
+        right: -80px;
+        bottom: 180px;
+    }
+}
+
+@media only screen and (min-width: 768px)
+{
+    #folha1
+    {
+        bottom: 40px;
+        right: 15px;
+    }
+    #container-midia-main p
+    {
+        font-size: 48px;
+    }
+    #container-informacoes
+    {
+        font-size: 22px;
+        padding-block: 0px;
+        padding-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 992px)
+{
+    
 }
