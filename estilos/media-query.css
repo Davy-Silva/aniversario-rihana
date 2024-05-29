@@ -57,10 +57,16 @@
     #pincelada-header
     {
         width: 380px;
+        bottom: 30px;
+        right: 100px;
     }
     header > p
     {
         font-size: 38px;
+    }
+    #container-midia-main
+    {
+        padding-block: 50px;
     }
     #container-midia-main > img
     {
@@ -73,14 +79,15 @@
     }
     #container-informacoes
     {
-        font-size: 20px;
-        padding-block: 30px;
+        font-size: 26px;
+        padding-block: 25px;
     }
     .botoes
     {
         width: 150px;
         height: 45px;
         font-size: 20px;
+        margin-top: 50px;
     }
     #pincelada-footer
     {
