@@ -93,7 +93,7 @@ main img
 {
     position: relative;
     width: 100vw;
-    height: calc(95vh - 400px);
+    height: calc(100vh - 600px);
 
     display: flex;
     justify-content: center;
