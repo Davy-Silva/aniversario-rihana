@@ -33,12 +33,15 @@ body
 {
     background-color: var(--cor1);
     overflow: hidden;
+    width: 100%;
+    height: 100%;
 }
 
 /*  HEADER  */
 header
 {
     position: relative;
+    height: 200px;
 
     display: flex;
     justify-content: center;
@@ -89,6 +92,8 @@ main img
 #container-midia-main
 {
     position: relative;
+    width: 100vw;
+    height: calc(95vh - 400px);
 
     display: flex;
     justify-content: center;
@@ -116,8 +121,6 @@ main img
 {
     display: flex;
     justify-content: space-evenly;
-
-    margin-top: 10px;
 }
 .botoes
 {
