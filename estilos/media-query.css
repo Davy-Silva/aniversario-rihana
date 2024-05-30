@@ -4,32 +4,35 @@
 {
     #folha2
     {
+        bottom: 30px;
         right: -30px;
     }
-    header > p
+    #meio > p
     {
-        top: 100px;
-        font-size: 32px;
+        font-size: 40px;
     }
     main img
     {
-        width: 300px;
-        height: 240px;
+        width: 350px;
+        height: 280px;
+    }
+    #container-midia-main p
+    {
+        font-size: 52px;
     }
     #container-informacoes
     {
-        font-size: 18px;
+        font-size: 26px;
     }
     #container-botoes
     {
-        padding-block: 0px;
         margin-top: 20px;
     }
     .botoes
     {
-        width: 100px;
-        height: 40px;
-        font-size: 16px;
+        width: 130px;
+        height: 50px;
+        font-size: 20px;
     }
     #pincelada-footer
     {
@@ -39,6 +42,33 @@
     {
         right: 20px;
         bottom: 10px;
+    }
+}
+
+@media only screen and (min-width: 450px)
+{
+    #meio > p
+    {
+        font-size: 38px;
+    }
+    main img
+    {
+        width: 400px;
+        height: 340px;
+    }
+    #container-midia-main p
+    {
+        font-size: 59px;
+    }
+    #container-informacoes
+    {
+        font-size: 28px;
+    }
+    .botoes
+    {
+        width: 130px;
+        height: 50px;
+        font-size: 22px;
     }
 }
 
@@ -56,29 +86,29 @@
         bottom: 30px;
         right: 100px;
     }
-    header > p
+    #meio > p
     {
-        font-size: 38px;
+        font-size: 48px;
     }
     #container-midia-main > img
     {
-        width: 400px;
-        height: 320px;
+        width: 500px;
+        height: 420px;
     }
     #container-midia-main p
     {
-        font-size: 58px;
+        font-size: 68px;
     }
     #container-informacoes
     {
-        font-size: 26px;
+        font-size: 30px;
         padding-block: 25px;
     }
     .botoes
     {
-        width: 150px;
-        height: 45px;
-        font-size: 20px;
+        width: 180px;
+        height: 65px;
+        font-size: 30px;
         margin-top: 50px;
     }
     #pincelada-footer
@@ -96,39 +126,55 @@
 
 @media only screen and (min-width: 768px)
 {
-    #folha1
+    #folha2
     {
-        bottom: 40px;
-        right: 15px;
+        left: -80px;
+        width: 500px;
+        height: 300px;
     }
-    header > p
+    #pincelada-header
     {
-        font-size: 42px;
+        bottom: 200px;
+        right: 200px;
+        width: 600px;
+        height: 700px;
+    }
+    #meio > p
+    {
+        font-size: 78px;
     }
     #container-midia-main p
     {
-        font-size: 62px;
+        font-size: 98px;
     }
     #container-midia-main > img
     {
-        width: 480px;
-        height: 390px;
+        width: 690px;
+        height: 590px;
     }
     #container-informacoes
     {
-        font-size: 26px;
+        font-size: 46px;
         padding-block: 0px;
         padding-bottom: 20px;
     }
     .botoes
     {
-        font-size: 26px;
-        width: 200px;
-        height: 50px;
+        font-size: 36px;
+        width: 250px;
+        height: 80px;
     }
     #pincelada-footer
     {
-        left: 90px;
+        left: 20px;
+        bottom: 300px;
+        width: 700px;
+        height: 800px;
+    }
+    #folha1
+    {
+        width: 500px;
+        height: 300px;
     }
 }
 
